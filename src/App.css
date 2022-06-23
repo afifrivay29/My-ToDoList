@@ -1,0 +1,15 @@
+.App {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #34495e;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
