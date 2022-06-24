@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+.button-list {
+  text-decoration: none;
+  margin: 4px;
+}
+
 .footer {
   padding: 20px;
   color: white;

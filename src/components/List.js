@@ -1,4 +1,5 @@
 import React from "react";
+import "../index.css";
 
 export default function List({ data, handleEdit, handleDelete }) {
   return (
@@ -11,13 +12,13 @@ export default function List({ data, handleEdit, handleDelete }) {
               <div>
                 <button
                   onClick={() => handleEdit(contact.id)}
-                  className="btn btn-sm btn-link"
+                  className="button-list btn btn-sm btn-success"
                 >
                   Edit
                 </button>
                 <button
                   onClick={() => handleDelete(contact.id)}
-                  className="btn btn-sm btn-link"
+                  className="button-list btn btn-sm btn-danger"
                 >
                   Delete
                 </button>

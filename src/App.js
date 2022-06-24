@@ -9,12 +9,12 @@ function App() {
     {
       id: 1,
       name: "Menyapu",
-      desc: "Sudah",
+      desc: "Done",
     },
     {
       id: 2,
       name: "Mencuci Piring",
-      desc: "Belum",
+      desc: "Not Done",
     },
   ]);
 
@@ -33,7 +33,7 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    alert("Data Telah Ditambahkan");
+    alert("Data Tersimpan");
     let data = [...contacts];
 
     if (formData.name === "") {
@@ -88,6 +88,7 @@ function App() {
               onChange={handleChange}
               value={formData.name}
               name="name"
+              placeholder="Please Enter Job"
             />
           </div>
           <div className="form-group mt-3">
@@ -98,6 +99,7 @@ function App() {
               onChange={handleChange}
               value={formData.desc}
               name="desc"
+              placeholder="Done/Not Done"
             />
           </div>
           <div>
